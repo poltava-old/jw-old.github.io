@@ -136,6 +136,10 @@ L.geoJSON(servants, {
             'Центральное': 'blue',
             'Юровка': 'red',
             'Восточное': 'black',
+            'Украинская Группа №1': 'brown',
+            'Украинская Группа №2': 'brown',
+            'Украинская Группа №3': 'brown',
+            'Украинская Группа №4': 'brown'
 
         }
 
@@ -155,16 +159,16 @@ L.geoJSON(servants, {
 /////-------------------------------------------------
 //// the code bellow will help you to get any coordinates on map
 /////-------------------------------------------------
-// var popup = L.popup();
+var popup = L.popup();
 
-// function onMapClick(e) {
-//     popup
-//         .setLatLng(e.latlng)
-//         .setContent("You clicked the map at " + e.latlng.toString())
-//         .openOn(map);
-// }
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
+}
 
-// map.on('click', onMapClick);
+map.on('click', onMapClick);
 
 
 
