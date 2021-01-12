@@ -100,6 +100,10 @@ ul.pins_color {
     color: grey;
 }
 
+.pins_color__ukr{
+    color: brown;    
+}
+
 /* Form slide down button */
 #formButton {
     z-index: 100001;
